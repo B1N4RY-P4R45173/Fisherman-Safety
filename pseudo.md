@@ -103,57 +103,7 @@ String checkLocation(float x, float y) {
     }
 }
 ```
-## Function `lightUp(color)`
-```cpp
-void lightUp(String color) {
-    // Turn off all LEDs
-    digitalWrite(LED_RED, LOW);
-    digitalWrite(LED_YELLOW, LOW);
-    digitalWrite(LED_GREEN, LOW);
-    
-    // Turn on LED corresponding to color
-    if (color == "Red") {
-        digitalWrite(LED_RED, HIGH);
-    } else if (color == "Yellow") {
-        digitalWrite(LED_YELLOW, HIGH);
-    } else if (color == "Green") {
-        digitalWrite(LED_GREEN, HIGH);
-    }
-}
-```
-## Function `playSound`
-```cpp
-void playSound() {
-    // Activate buzzer with brief delay
-    digitalWrite(BUZZER_PIN, HIGH);
-    delay(100);
-    digitalWrite(BUZZER_PIN, LOW);
-}
-```
-## Function `lcdPrint`
-```cpp
-void lcdPrint(String message) {
-    // Print message on LCD at appropriate position
-    lcd.clear();
-    lcd.setCursor(0, 0);
-    lcd.print(message);
-}
-```
-## Function: `blinkLEDs`
-```cpp
-void blinkLEDs() {
-    for (int i = 0; i < 5; i++) {
-        digitalWrite(LED_RED, HIGH);
-        digitalWrite(LED_YELLOW, HIGH);
-        digitalWrite(LED_GREEN, HIGH);
-        delay(100);
-        digitalWrite(LED_RED, LOW);
-        digitalWrite(LED_YELLOW, LOW);
-        digitalWrite(LED_GREEN, LOW);
-        delay(100);
-    }
-}
-```
+
 
 
 
